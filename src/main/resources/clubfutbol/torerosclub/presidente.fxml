@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="188.0" prefWidth="1300.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="136.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Files/FotosUsr/presidenteClub.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label text="¡Bienvenido al sistema del club! ">
+               <font>
+                  <Font name="Dubai Medium" size="36.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" prefHeight="156.0" prefWidth="646.0">
+               <children>
+                  <Label text="Cerrar sesión">
+                     <font>
+                        <Font name="Dubai Regular" size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="20.0" />
+                     </padding>
+                  </Label>
+                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="66.0" style="-fx-background-color: trnsparent;">
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Files/salirBtn.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets right="30.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="48.0" prefWidth="1300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="35.0" prefWidth="149.0" text="Toreros FC • 2023">
+               <font>
+                  <Font name="Dubai Light" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="484.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Club">
+               <font>
+                  <Font name="Dubai Regular" size="36.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="20.0" />
+               </padding>
+            </Label>
+            <VBox prefHeight="200.0" prefWidth="100.0" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="414.0" prefWidth="934.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Jugadores">
+               <font>
+                  <Font name="Dubai Regular" size="36.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="20.0" />
+               </padding>
+            </Label>
+            <VBox alignment="CENTER_LEFT" prefHeight="354.0" prefWidth="500.0">
+               <children>
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Label text="  •   Agregar ">
+                           <font>
+                              <Font name="Dubai Medium" size="26.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="76.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Files/PresidenteSection/addJug.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Label text="  •   Vender">
+                           <font>
+                              <Font name="Dubai Medium" size="26.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="76.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Files/PresidenteSection/dltJugador.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Label text="  •   Consultar estadisticas">
+                           <font>
+                              <Font name="Dubai Medium" size="26.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="76.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Files/PresidenteSection/addJug.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox alignment="TOP_CENTER" prefHeight="484.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Cuerpo técnico">
+               <font>
+                  <Font name="Dubai Regular" size="36.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="20.0" />
+               </padding>
+            </Label>
+            <VBox prefHeight="200.0" prefWidth="100.0" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clubfutbol.torerosclub.Presidente">
+<GridPane minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clubfutbol.torerosclub.Jugador">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -27,18 +27,21 @@
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #191919;">
          <children>
-            <ImageView fitHeight="64.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="72.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Files/FotosUsr/presidenteClub.png" />
+                  <Image url="@Files/FotosUsr/jugador.png" />
                </image>
                <HBox.margin>
-                  <Insets left="15.0" />
+                  <Insets left="15.0" top="10.0" />
                </HBox.margin>
             </ImageView>
-            <Label text="Presidente" textFill="WHITE">
+            <Label text="Jugador" textFill="WHITE">
                <HBox.margin>
                   <Insets left="15.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Franklin Gothic Medium" size="16.0" />
+               </font>
             </Label>
          </children>
       </HBox>
@@ -55,6 +58,9 @@
                <HBox.margin>
                   <Insets right="15.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
             </Button>
          </children>
          <cursor>
@@ -68,7 +74,10 @@
                   <Image url="@Files/escudoB.png" />
                </image>
             </ImageView>
-            <Label text="Toreros FC" textFill="WHITE" />
+            <Label text="Toreros FC" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font></Label>
          </children>
       </VBox>
       <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #191919;" GridPane.rowIndex="1">
@@ -82,27 +91,12 @@
                <children>
                   <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="210.0" style="-fx-background-color: transparent;" text="   Liga">
                      <VBox.margin>
-                        <Insets bottom="25.0" />
+                        <Insets />
                      </VBox.margin>
                      <graphic>
                         <ImageView fitHeight="33.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Files/PresidenteSection/liga.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="203.0" style="-fx-background-color: transparent;" text="  Fondos">
-                     <VBox.margin>
-                        <Insets bottom="25.0" />
-                     </VBox.margin>
-                     <graphic>
-                        <ImageView fitHeight="33.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Files/PresidenteSection/fondos%20club.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -118,44 +112,14 @@
          <children>
             <HBox alignment="BOTTOM_CENTER" prefHeight="29.0" prefWidth="200.0">
                <children>
-                  <Label text="JUGADORES" />
+                  <Label text="JUGADOR" />
                </children>
             </HBox>
             <VBox alignment="CENTER_LEFT" prefHeight="215.0" prefWidth="169.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="203.0" style="-fx-background-color: transparent;" text="  Agregar" textAlignment="CENTER">
+                  <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="207.0" style="-fx-background-color: transparent;" text="  Estadísticas">
                      <VBox.margin>
-                        <Insets bottom="10.0" top="10.0" />
-                     </VBox.margin>
-                     <graphic>
-                        <ImageView fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Files/PresidenteSection/addJug.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="206.0" style="-fx-background-color: transparent;" text="  Vender">
-                     <VBox.margin>
-                        <Insets bottom="10.0" top="10.0" />
-                     </VBox.margin>
-                     <graphic>
-                        <ImageView fitHeight="33.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Files/PresidenteSection/dltJugador.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="207.0" style="-fx-background-color: transparent;" text="  Consultar">
-                     <VBox.margin>
-                        <Insets bottom="10.0" top="10.0" />
+                        <Insets />
                      </VBox.margin>
                      <graphic>
                         <ImageView fitHeight="33.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
@@ -176,12 +140,12 @@
          <children>
             <HBox alignment="BOTTOM_CENTER" prefHeight="29.0" prefWidth="200.0">
                <children>
-                  <Label text="CUERPO TÉCNICO" />
+                  <Label text="PARTIDO" />
                </children>
             </HBox>
             <VBox alignment="CENTER" prefHeight="215.0" prefWidth="100.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="207.0" style="-fx-background-color: transparent;" text="  Agregar DT">
+                  <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="207.0" style="-fx-background-color: transparent;" text="Último Partido">
                      <VBox.margin>
                         <Insets bottom="30.0" />
                      </VBox.margin>
@@ -196,7 +160,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="216.0" style="-fx-background-color: transparent;" text="  Despedir DT">
+                  <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="216.0" style="-fx-background-color: transparent;" text="Promedio valoración">
                      <VBox.margin>
                         <Insets bottom="30.0" />
                      </VBox.margin>
@@ -215,11 +179,11 @@
             </VBox>
          </children>
       </VBox>
-      <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #191919;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <HBox alignment="CENTER" prefHeight="0.0" prefWidth="200.0" style="-fx-background-color: #191919;" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <children>
-            <Label text="© Toreros Fútbol Club - 2023" textFill="WHITE">
+            <Label text="© Toreros Futbol Club - 2023" textFill="WHITE">
                <font>
-                  <Font size="11.0" />
+                  <Font name="Franklin Gothic Medium" size="14.0" />
                </font>
             </Label>
          </children></HBox>

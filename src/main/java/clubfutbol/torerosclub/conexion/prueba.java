@@ -12,7 +12,7 @@ import clubfutbol.torerosclub.modulo.seguridad.ComprobarUsr;
  */
 public class prueba {
     public static void main(String[] args) {
-        ComprobarUsr.ComprobarUSR("jgj", "jgvj");
+        System.out.println(ComprobarUsr.ComprobarUSR("fbustos", "0934657886")); 
         
     }
     

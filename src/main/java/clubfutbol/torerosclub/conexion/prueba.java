@@ -4,16 +4,20 @@
  */
 package clubfutbol.torerosclub.conexion;
 
-import clubfutbol.torerosclub.modulo.seguridad.ComprobarUsr;
+import clubfutbol.torerosclub.modulos.seguridad.ComprobarUsr;
+import clubfutbol.torerosclub.modulos.ventanas.Paises;
+import java.io.IOException;
 
 /**
  *
  * @author sebas
  */
 public class prueba {
-    public static void main(String[] args) {
-        ComprobarUsr.ComprobarUSR("jgj", "jgvj");
+    public static void main(String[] args) throws IOException {
         
+        for (String s : Paises.getListapaises()){
+            System.out.println(s);
+        }
     }
     
 }

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clubfutbol.torerosclub.addDT">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="176.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="424.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="320.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #191919;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Files/escudoB.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label text="Añadir DT" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #191919;" GridPane.columnIndex="1">
+         <children>
+            <Button fx:id="btnVolver" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#volver" prefHeight="57.0" prefWidth="112.0" style="-fx-background-color: transparent;" text="Volver " textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Files/salir.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="176.0">
+               <children>
+                  <Label text="Nacionalidad:" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="176.0">
+               <children>
+                  <Label text="Nombres" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="176.0">
+               <children>
+                  <Label text="Apelidos" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="176.0">
+               <children>
+                  <Label text="Cédula o Pasaporte" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="176.0">
+               <children>
+                  <Label text="Fecha de Nacimineto" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="176.0">
+               <children>
+                  <Label text="Contrato" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="176.0">
+               <children>
+                  <Label text="Sueldo" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="176.0">
+               <children>
+                  <Label text="Número Celular" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="176.0" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="424.0">
+               <children>
+                  <ComboBox fx:id="box" onAction="#revision" prefWidth="150.0" promptText="Seleccione el país" style="-fx-background-color: transparent; -fx-border-color: #191919; -fx-border-radius: 5px;" />
+                  <Label textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="424.0">
+               <children>
+                  <TextField fx:id="nombre1" onAction="#revision" promptText="Primer nombre">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin></TextField>
+                  <Label textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nombre2" onAction="#revision" promptText="Segundo nombre">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="424.0">
+               <children>
+                  <TextField fx:id="apellido1" onAction="#revision" promptText="Primer Apellido">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin></TextField>
+                  <TextField fx:id="apellido2" onAction="#revision" promptText="Segundo Apellido">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="424.0">
+               <children>
+                  <TextField fx:id="cedula" onAction="#revision" />
+                  <Label textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="424.0">
+               <children>
+                  <DatePicker fx:id="fechaNac" onAction="#revision" promptText="Nacimiento" />
+                  <Label textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="424.0">
+               <children>
+                  <DatePicker fx:id="iniContr" onAction="#revision" promptText=" Inicio del contrato">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <DatePicker fx:id="finContr" onAction="#revision" promptText="Fin del Contrato">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin></DatePicker>
+                  <Label textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="424.0">
+               <children>
+                  <TextField fx:id="sueldo" onAction="#revision" />
+                  <Label textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="424.0">
+               <children>
+                  <TextField fx:id="celular" onAction="#revision" promptText="Celular" />
+                  <Label textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="424.0">
+               <children>
+                  <CheckBox fx:id="checkInfo" mnemonicParsing="false" onAction="#revision" style="-fx-background-color: transparent;" text="He Revisado que todos los datos son correctos." />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #191919;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="borrar" mnemonicParsing="false" onAction="#borrarTodo" style="-fx-background-color: transparent; -fx-border-color: White; -fx-border-radius: 4px; -fx-border-width: 2px;" text="Borrar Todo" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="next" mnemonicParsing="false" onAction="#agregar" style="-fx-background-color: transparent; -fx-border-color: White; -fx-border-radius: 4px; -fx-border-width: 2px;" text="Añadir" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #191919;" GridPane.rowIndex="2">
+         <children>
+            <Label fx:id="correofinal" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="16.0" />
+               </font>
+            </Label>
+         </children></HBox>
+   </children>
+</GridPane>

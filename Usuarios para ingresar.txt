@@ -1,6 +1,4 @@
-# ClubFutbol
-Proyecto de Base de Datos
-
+Usuarios para ingresar
 
 alfmno - 0945176178  | Presidente
 fbustos - 0934657886  | DT

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clubfutbol.torerosclub.conJugador">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="326.39996337890625" prefWidth="484.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="65.60003662109375" prefWidth="116.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #191919;">
+         <children>
+            <ImageView fitHeight="44.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Files/escudoB.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label text="Consultar Jugador" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #191919;" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <children>
+            <Button fx:id="btnVolver" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#volver" prefHeight="57.0" prefWidth="112.0" style="-fx-background-color: transparent;" text="Volver " textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Files/salir.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #191919;" GridPane.rowIndex="2" />
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #191919;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #191919;" GridPane.rowIndex="1">
+         <children>
+            <HBox alignment="CENTER" prefHeight="65.0" prefWidth="484.0">
+               <children>
+                  <Label text="Buscar Jugador">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="boxJugadores" prefHeight="26.0" prefWidth="317.0">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="271.0" prefWidth="484.0">
+               <children>
+                  <VBox prefHeight="263.0" prefWidth="267.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="242.0">
+                           <children>
+                              <Label text="Informacion General" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="222.0" prefWidth="242.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="222.0" prefWidth="160.0">
+                                 <children>
+                                    <Label text="Cedula">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Correo">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Sueldo">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="222.0" prefWidth="181.0">
+                                 <children>
+                                    <Label>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children></VBox>
+                  <VBox prefHeight="263.0" prefWidth="268.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Informacion deportiva" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="240.0" prefWidth="242.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="222.0" prefWidth="160.0">
+                                 <children>
+                                    <Label text="Dorsal">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Altura">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label prefHeight="18.0" prefWidth="30.0" text="Peso">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Valor Potencia">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Lesion">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Seleccionado">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Posicion" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="222.0" prefWidth="181.0">
+                                 <children>
+                                    <Label>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children></VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #191919;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="btnConsultar" mnemonicParsing="false" onAction="#consultar" style="-fx-background-color: transparent; -fx-border-color: #191919;" text="Consultar" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
+

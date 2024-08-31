@@ -68,7 +68,11 @@
                         <Insets bottom="5.0" />
                      </padding>
                   </Label>
-                  <PasswordField fx:id="cedula" promptText="Ingreses su contraseña" />
+                  <HBox prefHeight="16.0" prefWidth="343.0">
+                     <children>
+                        <PasswordField fx:id="cedula" prefHeight="23.0" prefWidth="352.0" promptText="Ingreses su contraseña" />
+                     </children>
+                  </HBox>
                   <Label fx:id="error" textFill="RED" />
                   <HBox alignment="CENTER" prefHeight="70.0" prefWidth="343.0">
                      <children>

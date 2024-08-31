@@ -3,7 +3,7 @@ import java.sql.*;
 public class ConexionMysql {
     private Connection connection;
     private String usuario = "root";
-    private String password = "";
+    private String password = "root";
     private String servidor = "localhost";
     private String puerto = "3306";
     private String nombreBD = "club_de_futbol";
